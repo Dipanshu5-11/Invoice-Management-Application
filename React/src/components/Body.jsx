@@ -251,7 +251,7 @@ const Body = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8083/A_Aditi/Read"
+          "http://localhost:8083/backend/Read"
         );
         const modifiedData = response.data.map((row, index) => ({
           id: index + 1,
